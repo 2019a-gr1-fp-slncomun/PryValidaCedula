@@ -81,11 +81,6 @@ namespace WindowsFormsAppValidaCedula
 							);
 					}
 				}
-				/*if ((myStream = saveFileDialogCedula.OpenFile()) != null)
-				{
-					File.WriteAllText(saveFileDialog1.FileName, textBox_ListDestination.Text);
-					myStream.Close();
-				}*/
 			}
 		}
 	}
