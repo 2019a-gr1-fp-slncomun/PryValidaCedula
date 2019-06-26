@@ -111,6 +111,7 @@ namespace ClassLibraryValidaCedula
 			if (ValidaDigitoVerificador(cedula))
 			{
 				mensajeValidacion = "Cédula " + cedula + " es Válida!!";
+				return 0;
 			}
 			else
 			{

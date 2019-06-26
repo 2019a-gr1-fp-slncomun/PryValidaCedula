@@ -101,7 +101,6 @@
 			this.saveFileDialogCedula.DefaultExt = "txt";
 			this.saveFileDialogCedula.FileName = "CedulasValidadas.txt";
 			this.saveFileDialogCedula.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
-			this.saveFileDialogCedula.FilterIndex = 2;
 			this.saveFileDialogCedula.RestoreDirectory = true;
 			// 
 			// ValidaCedula

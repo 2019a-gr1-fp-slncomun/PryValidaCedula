@@ -17,7 +17,7 @@ namespace ConsoleAppCSValidaCedula
 			ProcessStartInfo startInfo = new ProcessStartInfo();
 			startInfo.CreateNoWindow = false;
 			startInfo.UseShellExecute = false;
-			startInfo.FileName = @"..\..\..\debug\ConsoleAppValidaCedula.exe";
+			startInfo.FileName = @"..\..\..\debug\ConsoleAppCppValidaCedula.exe";
 			startInfo.WindowStyle = ProcessWindowStyle.Hidden;
 			startInfo.Arguments = "0100432517";
 			startInfo.RedirectStandardOutput = true;

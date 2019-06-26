@@ -36,6 +36,7 @@ namespace WindowsFormsAppValidaCedula
 					//object[,] objects = new object[1, 3];
 					//objects[0, 1] = cedulaLeida;
 					dsCedula.Tables[0].Rows.Add(new Object[] { cedulaLeida, mensajeValidacionCedula, valorRetornoCedula });
+					//dsCedula.Tables[0]
 					//Console.WriteLine(s);
 				}
 			}

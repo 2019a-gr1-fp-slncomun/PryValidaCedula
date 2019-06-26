@@ -1,7 +1,9 @@
 #include <string.h> 
 #include <iostream>
 #include <stdlib.h>
+
 using namespace std;
+
 bool ValidarTamanio(string cedula) 
 {
 	if (cedula.size() != 10) 
@@ -88,28 +90,29 @@ int main(int argc, char** argv)
 		return 1;
 	}
 	string cedula = argv[1];
-	if (!ValidarTamanio(cedula)) {
+	if (!ValidarTamanio(cedula)) 
+	{
 		cout << "Tamaño cédula " << cedula << " no válido!!";
-		return 1;
+		return 2;
 	}
 	if (!ValidaSoloNumeros(cedula)) {
 		cout << "Cédula " << cedula << " solo debe tener números!!";
-		return 2;
+		return 3;
 	}
 	if (!ValidaTercerDigito(cedula)) {
 		cout << "Tercer dígito de cédula " << cedula << " es INVÁLIDO!!";
-		return 3;
+		return 4;
 	}
 	if (!ValidaProvinciaCedula(cedula)) {
 		cout << "Cédula " << cedula << " no fue emitida para una provincia válida!!";
-		return 4;
+		return 5;
 	}
 	if (ValidaDigitoVerificador(cedula)) {
 		cout << "Cédula " << cedula << " es Válida!!";
 	}
 	else {
 		cout << "Cédula " << cedula << " es INVÁLIDA!!";
-		return 5;
+		return 6;
 	}
 	return 0;
 }
